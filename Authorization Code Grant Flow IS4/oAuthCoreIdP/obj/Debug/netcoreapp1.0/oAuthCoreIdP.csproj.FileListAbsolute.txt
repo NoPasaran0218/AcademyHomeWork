@@ -1,0 +1,22 @@
+E:\IdentityServer4.Authorization.Code-master\oAuthCoreIdP\bin\Debug\netcoreapp1.0\SscSign.pfx
+E:\IdentityServer4.Authorization.Code-master\oAuthCoreIdP\bin\Debug\netcoreapp1.0\oAuthCoreIdP.deps.json
+E:\IdentityServer4.Authorization.Code-master\oAuthCoreIdP\bin\Debug\netcoreapp1.0\oAuthCoreIdP.runtimeconfig.json
+E:\IdentityServer4.Authorization.Code-master\oAuthCoreIdP\bin\Debug\netcoreapp1.0\oAuthCoreIdP.runtimeconfig.dev.json
+E:\IdentityServer4.Authorization.Code-master\oAuthCoreIdP\bin\Debug\netcoreapp1.0\oAuthCoreIdP.dll
+E:\IdentityServer4.Authorization.Code-master\oAuthCoreIdP\bin\Debug\netcoreapp1.0\oAuthCoreIdP.pdb
+E:\IdentityServer4.Authorization.Code-master\oAuthCoreIdP\obj\Debug\netcoreapp1.0\oAuthCoreIdP.csprojResolveAssemblyReference.cache
+E:\IdentityServer4.Authorization.Code-master\oAuthCoreIdP\obj\Debug\netcoreapp1.0\oAuthCoreIdP.AssemblyInfo.cs
+E:\IdentityServer4.Authorization.Code-master\oAuthCoreIdP\obj\Debug\netcoreapp1.0\oAuthCoreIdP.dll
+E:\IdentityServer4.Authorization.Code-master\oAuthCoreIdP\obj\Debug\netcoreapp1.0\oAuthCoreIdP.pdb
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\bin\Debug\netcoreapp1.0\SscSign.pfx
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\bin\Debug\netcoreapp1.0\oAuthCoreIdP.deps.json
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\bin\Debug\netcoreapp1.0\oAuthCoreIdP.runtimeconfig.json
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\bin\Debug\netcoreapp1.0\oAuthCoreIdP.runtimeconfig.dev.json
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\bin\Debug\netcoreapp1.0\oAuthCoreIdP.dll
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\bin\Debug\netcoreapp1.0\oAuthCoreIdP.pdb
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\obj\Debug\netcoreapp1.0\oAuthCoreIdP.csprojResolveAssemblyReference.cache
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\obj\Debug\netcoreapp1.0\oAuthCoreIdP.csproj.CoreCompileInputs.cache
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\obj\Debug\netcoreapp1.0\oAuthCoreIdP.AssemblyInfoInputs.cache
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\obj\Debug\netcoreapp1.0\oAuthCoreIdP.AssemblyInfo.cs
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\obj\Debug\netcoreapp1.0\oAuthCoreIdP.dll
+F:\Authorization Code Grant Flow IS4\oAuthCoreIdP\obj\Debug\netcoreapp1.0\oAuthCoreIdP.pdb

@@ -1,0 +1,8 @@
+<div *ngIf="task">
+        <div><label>id: </label> {{task.id}}</div>
+        <div>
+            <p>Title: <input [(ngModel)]="task.title" placeholder="name"></p>
+            <p>Description: <input [(ngModel)]="task.description" placeholder="description"></p>
+            <p>isComplete: <input [(ngModel)]="task.isComplete" placeholder="isComplete" readonly></p>
+        </div>
+</div>

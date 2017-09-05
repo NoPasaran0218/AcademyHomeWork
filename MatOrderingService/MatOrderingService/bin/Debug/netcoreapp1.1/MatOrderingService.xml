@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MatOrderingService</name>
+    </assembly>
+    <members>
+        <member name="M:MatOrderingService.Controllers.OrderController.Create(MatOrderingService.Domain.NewOrder)">
+            <summary>
+            </summary>
+            <param name="Order"> which will added</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

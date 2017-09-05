@@ -1,0 +1,28 @@
+c:\users\serhii\documents\visual studio 2017\Projects\MatAcademy\DZ\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.deps.json
+c:\users\serhii\documents\visual studio 2017\Projects\MatAcademy\DZ\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.runtimeconfig.json
+c:\users\serhii\documents\visual studio 2017\Projects\MatAcademy\DZ\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.runtimeconfig.dev.json
+c:\users\serhii\documents\visual studio 2017\Projects\MatAcademy\DZ\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.dll
+c:\users\serhii\documents\visual studio 2017\Projects\MatAcademy\DZ\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.pdb
+c:\users\serhii\documents\visual studio 2017\Projects\MatAcademy\DZ\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.csprojResolveAssemblyReference.cache
+c:\users\serhii\documents\visual studio 2017\Projects\MatAcademy\DZ\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.AssemblyInfo.cs
+c:\users\serhii\documents\visual studio 2017\Projects\MatAcademy\DZ\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.dll
+c:\users\serhii\documents\visual studio 2017\Projects\MatAcademy\DZ\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.pdb
+C:\Users\svoitovych\Downloads\asp.netCore (1)\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.deps.json
+C:\Users\svoitovych\Downloads\asp.netCore (1)\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.runtimeconfig.json
+C:\Users\svoitovych\Downloads\asp.netCore (1)\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.runtimeconfig.dev.json
+C:\Users\svoitovych\Downloads\asp.netCore (1)\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.dll
+C:\Users\svoitovych\Downloads\asp.netCore (1)\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.pdb
+C:\Users\svoitovych\Downloads\asp.netCore (1)\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.csprojResolveAssemblyReference.cache
+C:\Users\svoitovych\Downloads\asp.netCore (1)\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.csproj.CoreCompileInputs.cache
+C:\Users\svoitovych\Downloads\asp.netCore (1)\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.AssemblyInfo.cs
+C:\Users\svoitovych\Downloads\asp.netCore (1)\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.dll
+C:\Users\svoitovych\Downloads\asp.netCore (1)\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.pdb
+E:\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.deps.json
+E:\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.runtimeconfig.json
+E:\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.runtimeconfig.dev.json
+E:\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.dll
+E:\asp.netCore\asp.netCore\bin\Debug\netcoreapp1.1\asp.netCore.pdb
+E:\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.csprojResolveAssemblyReference.cache
+E:\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.AssemblyInfo.cs
+E:\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.dll
+E:\asp.netCore\asp.netCore\obj\Debug\netcoreapp1.1\asp.netCore.pdb

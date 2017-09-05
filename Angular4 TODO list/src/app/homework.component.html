@@ -1,0 +1,21 @@
+<h3>The Tasks: </h3>
+<div class="grid grid-pad">
+    <a *ngFor="let task of workItems" class="col-1-4" [class.selected]="task === selectedTask" >
+    <div class="icons">
+        <div class="do-complite" (click)="doComplite(task)"></div>
+        <div class="remove-task" (click)="removeTask(task)"></div>
+      </div>
+		<div class="module task" (click)="onSelected(task)" >
+          <h4>{{task.title}}</h4>
+          <p>{{task.description}}</p>
+		</div>
+    </a>
+    <!--<a class="col-1-4" (click)="onAdd(task)" [class.selected]="task === selectedTask">
+		<div class="module task">
+            <h4>title</h4>        
+
+		</div>
+    </a>-->
+</div>
+
+<work-details [task]="selectedTask"></work-details>
