@@ -1,0 +1,17 @@
+<h2>My Task List</h2>
+
+<ul class="heroes">
+    <li *ngFor="let task of tasks" (click)="onSelectedTask(task)"
+    [class.selected]="task === selectedTask" [class.removed]="task.removed===true" 
+    [class.complited]="task.isComplete===true">
+        <span class="badge">{{task.id}}</span>
+        {{task.title}}
+        <span class="doComplite" (click)="doComplite(task)">&#10004;</span>
+        <span class="remove" (click)="remove(task)">X</span>
+    </li>
+</ul>
+
+<label>Task: <input class="form-control" [(ngModel)]="title" placeholder = "title" /></label>
+<button class="btn-default btn" (click)="addTask(title)">Add Task</button>
+
+<!--<hero-details [hero]="selectedHero"></hero-details>-->

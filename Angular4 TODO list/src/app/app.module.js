@@ -9,14 +9,9 @@ var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
 var app_component_1 = require("./app.component");
-var hero_detail_component_1 = require("./hero-detail.component");
-var heroes_component_1 = require("./heroes.component");
-var hero_service_1 = require("./hero.service");
-var dashboard_component_1 = require("./dashboard.component");
+var task_component_1 = require("./task.component");
+var task_service_1 = require("./task.service");
 var router_1 = require("@angular/router");
-var homework_component_1 = require("./homework.component");
-var work_service_1 = require("./work.service");
-var work_details_component_1 = require("./work-details.component");
 var routers = [
     {
         path: '',
@@ -24,24 +19,8 @@ var routers = [
         pathMatch: 'full'
     },
     {
-        path: 'dashboard',
-        component: dashboard_component_1.DashboardComponent
-    },
-    {
-        path: 'heroes',
-        component: heroes_component_1.HeroesComponent
-    },
-    {
-        path: 'details/:id',
-        component: hero_detail_component_1.HeroDetailsComponent
-    },
-    {
-        path: 'homework',
-        component: homework_component_1.HomeWorkComponent
-    },
-    {
-        path: 'workdetails/:id',
-        component: work_details_component_1.WorkDetailsComponent
+        path: 'tasks',
+        component: task_component_1.TasksComponent
     }
 ];
 var AppModule = (function () {
@@ -58,14 +37,10 @@ AppModule = __decorate([
         ],
         declarations: [
             app_component_1.AppComponent,
-            hero_detail_component_1.HeroDetailsComponent,
-            heroes_component_1.HeroesComponent,
-            dashboard_component_1.DashboardComponent,
-            homework_component_1.HomeWorkComponent,
-            work_details_component_1.WorkDetailsComponent
+            task_component_1.TasksComponent
         ],
         bootstrap: [app_component_1.AppComponent],
-        providers: [hero_service_1.HeroService, work_service_1.WorkService]
+        providers: [task_service_1.TaskService]
     })
 ], AppModule);
 exports.AppModule = AppModule;
