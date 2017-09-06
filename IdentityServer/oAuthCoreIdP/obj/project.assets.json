@@ -9981,10 +9981,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Authorization Code Grant Flow IS4\\oAuthCoreIdP\\oAuthCoreIdP.csproj",
+      "projectUniqueName": "E:\\dz\\AcademyHomeWork\\IdentityServer\\oAuthCoreIdP\\oAuthCoreIdP.csproj",
       "projectName": "oAuthCoreIdP",
-      "projectPath": "F:\\Authorization Code Grant Flow IS4\\oAuthCoreIdP\\oAuthCoreIdP.csproj",
-      "outputPath": "F:\\Authorization Code Grant Flow IS4\\oAuthCoreIdP\\obj\\",
+      "projectPath": "E:\\dz\\AcademyHomeWork\\IdentityServer\\oAuthCoreIdP\\oAuthCoreIdP.csproj",
+      "outputPath": "E:\\dz\\AcademyHomeWork\\IdentityServer\\oAuthCoreIdP\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.0"
