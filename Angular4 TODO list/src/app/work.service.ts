@@ -5,6 +5,8 @@ import {WorkItem} from './WorkItem';
 
 @Injectable()
 export class WorkService{
+    workItems:WorkItem[];
+    
     getTasks():Promise<WorkItem[]>{
         return new Promise(resolve=>{
             setTimeout(()=>{
@@ -22,5 +24,10 @@ export class WorkService{
             }, 500);
         })
     };
+
+    /*getTask(id:number){
+        const task = TASKS.find(f=>f.id==id);
+        return task;
+    }*/
 
 }
