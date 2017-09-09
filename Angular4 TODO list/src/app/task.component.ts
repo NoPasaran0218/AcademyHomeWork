@@ -16,31 +16,26 @@ export class TasksComponent implements OnInit  {
   constructor(private taskService:TaskService){ }
 
   ngOnInit(){
-    this.tasks=this.taskService.getTasks();//.then(tasks=>this.tasks=tasks);
+    this.taskService.getTasks().then(tasks=>this.tasks=tasks);
   }
-  /*hero: Hero = {
-    id:1,
-    name:"Winstorm"
-  };*/
 
     onSelectedTask(task: Task){
       this.selectedTask=task;
     }
 
     doComplite(task:Task):void{
-      task.isComplete=true;
+      this.taskService.doComplite(task.id);
+      this.ngOnInit();
     }
 
     remove(task:Task):void{
-      task.removed=true;
+      this.taskService.deleteTask(task.id);
+      this.ngOnInit();
     }
 
     addTask(title: string){
-      /*var newTask:Task;
-      newTask = new Task(title);
-      newTask.id=this.tasks.length;
-      this.tasks.push(newTask);*/
       this.taskService.addTask(title);
+      this.ngOnInit();
     }
 }
 

@@ -15,27 +15,23 @@ var TasksComponent = (function () {
         this.taskService = taskService;
     }
     TasksComponent.prototype.ngOnInit = function () {
-        this.tasks = this.taskService.getTasks(); //.then(tasks=>this.tasks=tasks);
+        var _this = this;
+        this.taskService.getTasks().then(function (tasks) { return _this.tasks = tasks; });
     };
-    /*hero: Hero = {
-      id:1,
-      name:"Winstorm"
-    };*/
     TasksComponent.prototype.onSelectedTask = function (task) {
         this.selectedTask = task;
     };
     TasksComponent.prototype.doComplite = function (task) {
-        task.isComplete = true;
+        this.taskService.doComplite(task.id);
+        this.ngOnInit();
     };
     TasksComponent.prototype.remove = function (task) {
-        task.removed = true;
+        this.taskService.deleteTask(task.id);
+        this.ngOnInit();
     };
     TasksComponent.prototype.addTask = function (title) {
-        /*var newTask:Task;
-        newTask = new Task(title);
-        newTask.id=this.tasks.length;
-        this.tasks.push(newTask);*/
         this.taskService.addTask(title);
+        this.ngOnInit();
     };
     return TasksComponent;
 }());

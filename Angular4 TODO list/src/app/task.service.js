@@ -9,39 +9,80 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require("@angular/core");
-var mock_tasks_1 = require("./mock-tasks");
 var Task_1 = require("./Task");
 var TaskService = (function () {
     /**
      *
      */
     function TaskService() {
-        this.tasks = mock_tasks_1.TASKS;
+        this.tasks = [
+            { id: 1, title: "task1", isComplete: false, removed: false },
+            { id: 2, title: "task2", isComplete: false, removed: false },
+            { id: 3, title: "task3", isComplete: false, removed: false },
+            { id: 4, title: "task4", isComplete: false, removed: false },
+            { id: 5, title: "task5", isComplete: false, removed: false },
+            { id: 6, title: "task6", isComplete: false, removed: false },
+        ];
+        this.writeListInLocalStorage(this.tasks);
     }
-    /*getTasks():Promise<Task[]>{
-        return new Promise(resolve=>{
-            setTimeout(()=>{
-                resolve(TASKS);
-            }, 500);
+    TaskService.prototype.writeListInLocalStorage = function (list) {
+        localStorage.setItem("Tasks", JSON.stringify(list));
+    };
+    TaskService.prototype.getListFromLocalStorage = function () {
+        return JSON.parse(localStorage.getItem("Tasks"));
+    };
+    TaskService.prototype.getTasks = function () {
+        var _this = this;
+        return new Promise(function (resolve) {
+            setTimeout(function () {
+                resolve(_this.getListFromLocalStorage().filter(function (i) { return !i.removed; }));
+            }, 50);
         });
     };
-
-    getTask(id:number): Promise<Task>{
-        return new Promise(resolve=>{
-            setTimeout(() => {
-                const task = TASKS.find(f=>f.id===id);
-                resolve(task);
-            }, 500);
-        })
-    };*/
-    TaskService.prototype.getTasks = function () {
-        return this.tasks;
-    };
+    ;
     TaskService.prototype.addTask = function (title) {
-        var newTask;
-        newTask = new Task_1.Task(title);
-        newTask.id = this.tasks.length;
-        this.tasks.push(newTask);
+        var _this = this;
+        return new Promise(function (resolve) {
+            setTimeout(function () {
+                var item = new Task_1.Task(title);
+                item.id = _this.tasks.length;
+                _this.tasks.push(item);
+                _this.writeListInLocalStorage(_this.tasks);
+                resolve(item);
+            }, 50);
+        });
+    };
+    TaskService.prototype.deleteTask = function (id) {
+        var _this = this;
+        return new Promise(function (resolve) {
+            setTimeout(function () {
+                var index = _this.getListFromLocalStorage().findIndex(function (i) { return i.id === id; });
+                if (index != -1) {
+                    _this.tasks[index].removed = true;
+                    _this.writeListInLocalStorage(_this.tasks);
+                    resolve(true);
+                }
+                else {
+                    resolve(false);
+                }
+            }, 50);
+        });
+    };
+    TaskService.prototype.doComplite = function (id) {
+        var _this = this;
+        return new Promise(function (resolve) {
+            setTimeout(function () {
+                var index = _this.getListFromLocalStorage().findIndex(function (i) { return i.id === id; });
+                if (index != -1) {
+                    _this.tasks[index].isComplete = true;
+                    _this.writeListInLocalStorage(_this.tasks);
+                    resolve(true);
+                }
+                else {
+                    resolve(false);
+                }
+            }, 50);
+        });
     };
     return TaskService;
 }());

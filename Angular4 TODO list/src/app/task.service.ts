@@ -10,35 +10,73 @@ export class TaskService{
      *
      */
     constructor() {
-        this.tasks=TASKS;        
+        this.tasks = [
+            {id:1, title: "task1", isComplete:false, removed:false},
+            {id:2, title: "task2", isComplete:false, removed:false},
+            {id:3, title: "task3", isComplete:false, removed:false},
+            {id:4, title: "task4", isComplete:false, removed:false},
+            {id:5, title: "task5", isComplete:false, removed:false},
+            {id:6, title: "task6", isComplete:false, removed:false},
+        ];
+        this.writeListInLocalStorage(this.tasks);     
     }
 
-    /*getTasks():Promise<Task[]>{
+    writeListInLocalStorage(list:Task[]):void{
+        localStorage.setItem("Tasks", JSON.stringify(list));
+    }
+
+    getListFromLocalStorage():Task[]{
+        return JSON.parse(localStorage.getItem("Tasks"));
+    }
+
+    getTasks():Promise<Task[]>{
         return new Promise(resolve=>{
-            setTimeout(()=>{
-                resolve(TASKS);
-            }, 500);
+            setTimeout(() => {
+                resolve(this.getListFromLocalStorage().filter(i => !i.removed));
+            }, 50);
         });
     };
 
-    getTask(id:number): Promise<Task>{
-        return new Promise(resolve=>{
+    addTask(title: string): Promise<Task> {
+        return new Promise(resolve => {
             setTimeout(() => {
-                const task = TASKS.find(f=>f.id===id);
-                resolve(task);
-            }, 500);
-        })
-    };*/
-
-    getTasks():Task[]{
-        return this.tasks;
+                let item = new Task(title);
+                item.id = this.tasks.length;
+                this.tasks.push(item);
+                this.writeListInLocalStorage(this.tasks);
+                resolve(item);
+            }, 50);
+        });
     }
 
-    addTask(title:string):void{
-        var newTask:Task;
-        newTask = new Task(title);
-        newTask.id=this.tasks.length;
-        this.tasks.push(newTask);
+    deleteTask(id: number): Promise<boolean> {
+        return new Promise<boolean>(resolve => {
+            setTimeout(() => {
+                const index = this.getListFromLocalStorage().findIndex(i => i.id === id);
+                if (index != -1) {
+                    this.tasks[index].removed = true;
+                    this.writeListInLocalStorage(this.tasks);
+                    resolve(true);
+                } else {
+                    resolve(false);
+                }                
+            }, 50);
+        });
+    }
+
+    doComplite(id: number): Promise<boolean> {
+        return new Promise<boolean>(resolve => {
+            setTimeout(() => {
+                const index = this.getListFromLocalStorage().findIndex(i => i.id === id);
+                if (index != -1) {
+                    this.tasks[index].isComplete = true;
+                    this.writeListInLocalStorage(this.tasks);
+                    resolve(true);
+                } else {
+                    resolve(false);
+                }                
+            }, 50);
+        });
     }
 
 }
