@@ -67,7 +67,7 @@ var cardValidator = {
             return {
                 valid: false,
                 number: originCardNumber,
-                error: "wrong format: doesn't match the algorithm of the luna "+lunaAlgoritmSum
+                error: "wrong format: doesn't match the algorithm of the luna "
             };
         }
 
